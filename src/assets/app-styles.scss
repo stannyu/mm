@@ -1,0 +1,54 @@
+@import "variables";
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+}
+
+.form {
+  max-width: 540px;
+  min-height: 300px;
+  margin: 100px auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: $font-family;
+
+  .form-body {
+    box-sizing: border-box;
+    padding: 32px 50px 24px 50px;
+    background: $background-color;
+    border-radius: 8px 8px 0 0;
+
+    .form-title {
+      margin: 0 0 24px 0;
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: normal;
+      color: $text-color;
+    }
+  }
+
+  .form-footer {
+    background-color: white;
+    padding: 24px 50px 32px 50px;
+    border-radius: 0 0 8px 8px;
+
+    .btn {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 8px 16px;
+      margin-right: 16px;
+      color: #fff;
+      background: $button-color;
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-family: $font-family;
+    }
+  }
+}

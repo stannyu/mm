@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Miro Frontend assignment</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="form">
+  <div class="form-body">
+    <div class="form-content">
+      <h3 class="form-title">Share <span class="board-name">Board name</span> with others</h3>
+      <div class="emails-input" id="emails-editor"></div>
+    </div>
+  </div>
+  <div class="form-footer">
+    <button class="btn" type="button" data-add>Add email</button>
+    <button class="btn" type="button" data-get-count>Get emails count</button>
+  </div>
+</div>
+
+<script src="index.js"></script>
+<script>
+  const emailsContainer = document.getElementById('emails-editor');
+  const options = {
+    placeholder: 'custom placeholder',
+    emails: ['test@miro.io', 'test1@miro.io', 'not an email', 'email@miro.io'],
+  };
+  const editor = new EmailsEditor(emailsContainer, options);
+
+  const selectorAddEmail = document.querySelectorAll('[data-add]')[0];
+  const selectorGetEmailsCount = document.querySelectorAll('[data-get-count]')[0];
+
+  editor.handleAddEmails(selectorAddEmail);
+  editor.handleEmailsCount(selectorGetEmailsCount);
+</script>
+</body>
+</html>

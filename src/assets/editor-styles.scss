@@ -1,0 +1,86 @@
+@import "variables";
+
+// using unique prefix so app styles would not affect library styling
+
+.#{$prefix} {
+  &input-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    background: white;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    font-family: $font-family;
+    overflow-y: auto;
+  }
+
+  &input {
+    opacity: 0.7;
+    font-size: $email-font-size;
+    margin: 0 8px 4px 0;
+    border: none;
+
+    &:focus {
+      outline: none;
+      opacity: 1;
+    }
+  }
+
+  &email-tag {
+    margin: 0 8px 4px 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 24px 0 10px;
+    background: $tag-color;
+    border-radius: 100px;
+    font-size: $email-font-size;
+    line-height: 24px;
+    text-align: right;
+    color: $text-color;
+  }
+
+  &email--invalid {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 16px;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      content: '';
+      border-bottom: 1px dashed $error-color;
+    }
+  }
+
+  &email-remove {
+    position: absolute;
+    height: 24px;
+    right: 0;
+    background: transparent;
+    border: none;
+    padding: 0 5px 0 0;
+    width: 24px;
+    margin: 0;
+    font-size: $email-font-size;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+
+    &:focus {
+      background-color: darken($tag-color, 20%);
+    }
+  }
+
+  &email--invalid &email-remove {
+    right: 0;
+    padding: 0;
+    width: 10px;
+    border-radius: 0;
+
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
