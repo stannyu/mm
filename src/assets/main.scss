@@ -1,0 +1,70 @@
+@import 'global';
+@import 'nav-wrapper';
+@import 'loading';
+@import 'slide';
+
+.background-image {
+  height: 100%;
+  position: relative;
+  z-index: -100;
+  filter: brightness(75%);
+  transition: transform 1s ease-in-out;
+}
+
+.arrow-wrapper {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 100;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.arrowLeft {
+  left: 20px;
+  margin-top: -25px;
+  background: url('../img/right-arrow-svgrepo-com.svg') center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.arrowRight {
+  right: 20px;
+  background: url('../img/right-arrow-svgrepo-com.svg') center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.contacts-container {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  text-align: right;
+  z-index: -102;
+
+  a {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background: url('../img/logo.svg') center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}

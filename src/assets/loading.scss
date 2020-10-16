@@ -1,0 +1,108 @@
+.loading-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333;
+  z-index: 101;
+  animation: Leave 0.75s ease-in-out 2.5s forwards;
+}
+
+.monk {
+  position: absolute;
+  left: 50%;
+  background: url('../img/monk.png') center no-repeat;
+  width: 106px;
+  height: 149px;
+  margin-bottom: 3rem;
+  animation: MonkLevitate 2.5s linear infinite, Enter 0.75s ease-in-out;
+}
+
+.message {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  font-weight: bold;
+  margin: 0 auto;
+  animation: Enter 0.75s ease-in-out;
+}
+
+.initial::after {
+  content: '|';
+  animation: TextAnimation 0.5s ease-in-out 0.5s forwards;
+}
+
+.next {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: SlideIn 1s ease-in-out 0.75s forwards;
+}
+
+@keyframes Enter {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes Leave {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+@keyframes MonkLevitate {
+  0%,
+  100% {
+    transform: translateY(-100px) translateX(-65%);
+  }
+
+  50% {
+    transform: translateY(-70px) translateX(-65%);
+  }
+}
+
+@keyframes TextAnimation {
+  0% {
+    content: '|';
+  }
+
+  100% {
+    content: ' ';
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    width: 0;
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: 3px;
+  }
+
+  100% {
+    width: 130px;
+    margin-left: 3px;
+  }
+}

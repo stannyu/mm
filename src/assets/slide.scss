@@ -1,0 +1,98 @@
+.slide-container {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heading {
+  color: #fff;
+  padding: 20px;
+  font-size: 5em;
+  font-weight: normal;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000;
+  opacity: 0;
+  animation: Enter 0.75s ease-in-out 0.8s forwards;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1024px) {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+}
+
+.alignTop {
+  @media screen and (min-width: 1024px) {
+    padding-top: 0;
+    transform: translateY(0);
+    max-width: 550px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
+.alignLeft {
+  @media screen and (min-width: 1024px) {
+    margin-right: auto;
+    text-align: left;
+    transform: translateY(15%);
+  }
+}
+
+.alignRight {
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.alignCenter {
+  @media screen and (min-width: 1024px) {
+    top: 50%;
+    position: relative;
+    padding: 0 58px;
+    transform: translateY(-40px);
+  }
+}
+
+.first {
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
+}
+
+@keyframes Enter {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes EnterRight {
+  0% {
+    transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.hide {
+  opacity: 0;
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Klavika;
+  src: local('MyFont'), url(./font/klavika-regular-webfont.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Klavika;
+  font-size: 0.6em;
+  box-sizing: border-box;
+  background: #333;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.main-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}

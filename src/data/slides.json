@@ -1,0 +1,72 @@
+[
+  {
+    "heading": ["We are breaking", "our vow", "of silence"],
+    "position": {
+      "vertical": "top",
+      "horizontal": "left"
+    }
+  },
+  {
+    "heading": ["Talent is given.", "True skill is", "earned"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "left"
+    }
+  },
+  {
+    "heading": ["Be flexible to", "change and", "sturdy in", "conviction"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "left"
+    }
+  },
+  {
+    "heading": ["Use many skills", "yet work as one"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "right"
+    }
+  },
+  {
+    "heading": ["To master", "anything find", "interest in", "everything"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "right"
+    }
+  },
+  {
+    "heading": ["Individuals", "flourish", "if culture", "and wisdom", "are shared"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "right"
+    }
+  },
+  {
+    "heading": ["Train for", "perfection but", "aim for more"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "left"
+    }
+  },
+  {
+    "heading": ["Take pride in your", "work but do not", "seek praise"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "left"
+    }
+  },
+  {
+    "heading": ["Temporary", "sacrifice brings", "lasting results"],
+    "position": {
+      "vertical": "center",
+      "horizontal": "left"
+    }
+  },
+  {
+    "heading": ["Become a monk"],
+    "position": {
+      "vertical": "top",
+      "horizontal": "right"
+    }
+  }
+]

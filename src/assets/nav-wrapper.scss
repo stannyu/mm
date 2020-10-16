@@ -1,0 +1,79 @@
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.controls-container {
+  display: flex;
+  border: 1px dashed rgba(230, 230, 230, 0.95);
+  overflow: hidden;
+
+  @media screen and (min-width: 1024px) {
+    border-radius: 0;
+  }
+  button {
+    padding: 2px 8px;
+    background: transparent;
+    color: rgba(230, 230, 230, 0.95);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+
+    &:not(:last-child) {
+      border-right: 1px dashed rgba(230, 230, 230, 0.95);
+    }
+  }
+
+  .active {
+    color: #000;
+    background-color: rgba(230, 230, 230, 0.95);
+  }
+
+  .inactive {
+    opacity: 0.95;
+  }
+}
+
+.status-container {
+  text-align: center;
+  color: rgba(230, 230, 230, 0.95);
+  animation: Enter 0.75s ease-in-out 0.8s forwards;
+  margin-bottom: 20px;
+  opacity: 0;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@keyframes Enter {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
