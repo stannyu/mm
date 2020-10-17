@@ -7,7 +7,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: #333;
+  background: #131313;
   z-index: 101;
   animation: Leave 0.75s ease-in-out 2.5s forwards;
 }
@@ -15,7 +15,7 @@
 .monk {
   position: absolute;
   left: 50%;
-  background: url('../img/monk.png') center no-repeat;
+  background: url('img/monk.png') center no-repeat;
   width: 106px;
   height: 149px;
   margin-bottom: 3rem;

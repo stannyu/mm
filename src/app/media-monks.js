@@ -4,23 +4,38 @@ import slides from '../data/slides.json';
 
 import { View } from './view';
 
-export class MediaMonks {
-  sliderWidth;
-  windowWidth;
-  sliderPosition;
+/**
+ * This example based on simple Design Pattern - MVC, but because we do not have actual
+ * Model layer, this is mostly like View -> Controller relationship. Just like BackboneJS.
+ *
+ * Most of the code in this case is DOM manipulations, they are quite verbose.
+ * This, of course could be reduced by use of any Frontend Framework
+ *
+ * Idea is very simple: View know nothing about data or Controller. It is only responsibility is
+ * to create DOM elements and pass them to Controller. Controller responsible for data manipulations
+ * and DOM update. Our Model is slides.json. It store data about slides and text positioning.
+ */
 
+export class MediaMonks {
+  windowWidth;
   mainContainer;
   imageBackground;
+  mainSlogan;
 
+  sliderWidth;
+  sliderPosition;
   slider;
   slidesList;
   slideContainer;
   controlRight;
   controlLeft;
-  mainSlogan;
   sliderFooter;
 
   constructor() {
+    /**
+     * Initiate View class
+     * @type {View}
+     */
     this.view = new View();
     this.init();
   }

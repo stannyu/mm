@@ -1,4 +1,4 @@
-import { MediaMonks } from './emails-editor/media-monks';
+import { MediaMonks } from './app/media-monks';
 
 (function () {
   new MediaMonks();

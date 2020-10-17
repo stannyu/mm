@@ -28,7 +28,7 @@
 .arrowLeft {
   left: 20px;
   margin-top: -25px;
-  background: url('../img/right-arrow-svgrepo-com.svg') center no-repeat;
+  background: url('img/right-arrow-svgrepo-com.svg') center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transform: scaleX(-1);
@@ -37,7 +37,7 @@
 
 .arrowRight {
   right: 20px;
-  background: url('../img/right-arrow-svgrepo-com.svg') center no-repeat;
+  background: url('img/right-arrow-svgrepo-com.svg') center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -64,7 +64,7 @@
   bottom: 0;
   width: 100px;
   height: 100px;
-  background: url('../img/logo.svg') center no-repeat;
+  background: url('img/logo.svg') center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
 }

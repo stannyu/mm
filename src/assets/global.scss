@@ -1,6 +1,6 @@
 @font-face {
   font-family: Klavika;
-  src: local('MyFont'), url(./font/klavika-regular-webfont.woff) format('woff');
+  src: url(./font/klavika-regular-webfont.woff) format('woff');
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   font-family: Klavika;
   font-size: 0.6em;
   box-sizing: border-box;
-  background: #333;
+  background: #131313;
 }
 
 *,

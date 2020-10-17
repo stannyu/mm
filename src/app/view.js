@@ -1,7 +1,7 @@
 /**
  * Not the best way to use image, but this is a test assignment
  */
-import image from '../img/background.jpg';
+import image from '../assets/img/background.jpg';
 
 export class View {
   createBackgroundImage() {
